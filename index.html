@@ -30,15 +30,15 @@
 </dd>
 </dl>
 </section>
-<section>
+<section >
 <section>
 <h2>Overview</h2>
 </section>
-<section>
+<section >
 <h3>What is this?</h3>
 <p>Sphinx extension to build Revealjs presentation</p>
 </section>
-<section>
+<section >
 <h3>Features</h3>
 <aside class="notes">
 This is reST comment. Render into speaker note section</aside>
@@ -48,11 +48,11 @@ This is reST comment. Render into speaker note section</aside>
 </ul>
 </section>
 </section>
-<section>
+<section >
 <section>
 <h2>Convert sections from reStructuredText directly</h2>
 </section>
-<section>
+<section >
 <h3>Adjust section structure</h3>
 <p>From:</p>
 <pre><code data-trim data-noescape class="rest">
@@ -84,7 +84,7 @@ First section
     &lt;/section&gt;
 &lt;/section&gt;</code></pre>
 </section>
-<section>
+<section >
 <h3>reStructuredText comments are used as speaker notes</h3>
 <p>From:</p>
 <pre><code data-trim data-noescape class="rest">
@@ -96,22 +96,45 @@ First section
     This is comment in reStructuredText
     &lt;/aside&gt;</code></pre>
 </section>
-<section>
+<section >
 <h3>code-block as reveal.js code block</h3>
 </section>
 </section>
+<section >
 <section>
+<h2>Direcvite for meta of section</h2>
+</section>
+<section data-background-color="#009900">
+<h3>Inject background color</h3>
+<pre><code data-trim data-noescape class="rest">
+.. revealjs_section::
+    :background_color: #009900</code></pre>
+</section>
+<section data-background="_static/icon-attakei.jpg" data-background-size="contain">
+<h3>Inject background image</h3>
+<pre><code data-trim data-noescape class="rest">
+.. revealjs_section::
+    :background_image: _static/icon-attakei.jpg</code></pre>
+</section>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm">
+<h3>Inject background video</h3>
+<pre><code data-trim data-noescape class="rest">
+.. revealjs_section::
+    :background_video: https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm</code></pre>
+</section>
+</section>
+<section >
 <section>
 <h2>Usage</h2>
 </section>
-<section>
+<section >
 <h3>Installation</h3>
 <p>This project is not registered to PyPI.
 User need to install from GitHub</p>
 <pre><code data-trim data-noescape class="bash">
 $ pip install git+https://github.com/attakei/sphinx-revealjs</code></pre>
 </section>
-<section>
+<section >
 <h3>Configure</h3>
 <p>Edit <cite>conf.py</cite> to use this extension</p>
 <pre><code data-trim data-noescape class="python">
@@ -121,7 +144,7 @@ extensions = [
 
 html_theme = 'revealjs'</code></pre>
 </section>
-<section>
+<section >
 <h3>Write source</h3>
 <p>Write plain reStructuredText</p>
 <pre><code data-trim data-noescape class="rest">
@@ -143,7 +166,7 @@ Own self promotion
 Content
 =======</code></pre>
 </section>
-<section>
+<section >
 <h3>Build</h3>
 <p>This extension has custom builder name <code class="docutils literal notranslate"><span class="pre">revealjs</span></code> .
 If you make docs as Reveal.js presentation, you call <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">revealjs</span></code></p>
@@ -152,7 +175,7 @@ $ make revealjs</code></pre>
 <p>This presentation is made from <code class="docutils literal notranslate"><span class="pre">https://github.com/attakei/sphinx-revealjs/blob/demo/docs/index.rst</span></code></p>
 </section>
 </section>
-<section>
+<section >
 <h2>Enjoy writing reST as presentation</h2>
 <p>Please star!</p>
 <!-- Place this tag where you want the button to render. -->
