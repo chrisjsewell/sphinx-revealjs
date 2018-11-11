@@ -108,19 +108,47 @@ First section
 <h3>Inject background color</h3>
 <pre><code data-trim data-noescape class="rest">
 .. revealjs_section::
-    :background_color: #009900</code></pre>
+    :data-background-color: #009900</code></pre>
 </section>
-<section data-background="_static/icon-attakei.jpg" data-background-size="contain">
+<section data-background-image="_static/icon-attakei.jpg" data-background-size="contain">
 <h3>Inject background image</h3>
 <pre><code data-trim data-noescape class="rest">
 .. revealjs_section::
-    :background_image: _static/icon-attakei.jpg</code></pre>
+    :data-background-image: _static/icon-attakei.jpg
+    :data-background-size: contain</code></pre>
 </section>
 <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm">
 <h3>Inject background video</h3>
 <pre><code data-trim data-noescape class="rest">
 .. revealjs_section::
-    :background_video: https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm</code></pre>
+    :data-background-video: https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm</code></pre>
+</section>
+<section data-background-iframe="https://slides.com" data-background-interactive>
+<h3>Inject background iframe</h3>
+<pre><code data-trim data-noescape class="rest">
+.. revealjs_section::
+    :data-background-iframe: https://slides.com
+    :data-background-interactive:</code></pre>
+</section>
+<section data-transition="none">
+<h3>Transition settings(before)</h3>
+<pre><code data-trim data-noescape class="rest">
+.. revealjs_section::
+    :data-transition: none</code></pre>
+</section>
+<section data-transition="fade">
+<h3>Transition settings(after)</h3>
+<pre><code data-trim data-noescape class="rest">
+.. revealjs_section::
+    :data-transition: fade</code></pre>
+</section>
+<section data-background-image="_static/icon-attakei.jpg" data-background-size="contain" data-background-transition="zoom">
+<h3>Background image transition</h3>
+<pre><code data-trim data-noescape class="rest">
+.. revealjs_section::
+    :data-background-image: _static/icon-attakei.jpg
+    :data-background-size: contain
+    :data-background-transition: zoom</code></pre>
 </section>
 </section>
 <section >
