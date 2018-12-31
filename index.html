@@ -231,8 +231,7 @@ $ make revealjs</code></pre>
 		<script src="_static/revealjs/lib/js/head.min.js"></script>
 		<script src="_static/revealjs/js/reveal.js"></script>
 		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
+			var revealConfig = {
 				controls: true,
 				progress: true,
 				history: true,
@@ -243,7 +242,11 @@ $ make revealjs</code></pre>
 					{ src: "_static/revealjs/plugin/notes/notes.js", async: true },
 					{ src: "_static/revealjs/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
-			});
+			};
+			
+			
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize(revealConfig);
 		</script>
 	</body>
 </html>
